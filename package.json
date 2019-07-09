@@ -7,12 +7,16 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.19.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
+    "mocha": "^6.1.4",
     "nodemon": "^1.19.1"
   },
   "scripts": {
     "start": "node ./index.js",
-    "dev": "nodemon ./index.js"
+    "dev": "nodemon ./index.js",
+    "test": "SET NODE_ENV=test&& mocha __tests__/**/*.test.js --exit"
   }
 }
